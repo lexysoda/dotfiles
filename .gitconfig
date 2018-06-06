@@ -1,0 +1,7 @@
+[core]
+	editor=nvim
+	excludesfile = ~/.gitignore
+
+[user]
+	name = Roman Orzegowski
+	email = roman@mbr-targeting.com
