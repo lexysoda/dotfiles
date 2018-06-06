@@ -20,8 +20,13 @@ if ! zgen saved; then
 fi
 
 path=("$HOME/.jenv/bin" $path)
-
+path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
+# is this needed?
 export PATH
+
+manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
+# somehow this is needed
+export MANPATH
 
 HISTFILE=~/.histfile
 HISTSIZE=1000000
