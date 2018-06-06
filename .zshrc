@@ -21,12 +21,15 @@ fi
 
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
+path=("$HOME/MBR/toolbox/bin" $path)
 # is this needed?
 export PATH
 
 manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
 # somehow this is needed
 export MANPATH
+
+source ~/MBR/toolbox/etc/git-shortcuts
 
 HISTFILE=~/.histfile
 HISTSIZE=1000000
