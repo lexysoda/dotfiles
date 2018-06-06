@@ -35,6 +35,12 @@ SAVEHIST=1000000
 unsetopt autocd
 bindkey -v
 
+# prompt customization
+export DEFAULT_USER='roman'
+export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status docker_machine rbenv background_jobs time)
+
 #autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
