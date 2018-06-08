@@ -6,7 +6,7 @@ if ! zgen saved; then
   echo "Creating a zgen save"
 
   # themes
-  zgen load bhilburn/powerlevel9k powerlevel9k
+#  zgen load bhilburn/powerlevel9k powerlevel9k
 
   # specify plugins here
   zgen load zsh-users/zsh-completions src
@@ -22,12 +22,10 @@ fi
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
 path=("$HOME/MBR/toolbox/bin" $path)
-# is this needed?
 export PATH
 
-manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
-# somehow this is needed
-export MANPATH
+# manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
+# export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 source ~/MBR/toolbox/etc/git-shortcuts
 
@@ -46,6 +44,9 @@ export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status docker_
 
 #autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+
+# autocompletion case-insensitive
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #ls colors
 export CLICOLOR=1
