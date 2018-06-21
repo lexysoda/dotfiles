@@ -6,7 +6,7 @@ if ! zgen saved; then
   echo "Creating a zgen save"
 
   # themes
-#  zgen load bhilburn/powerlevel9k powerlevel9k
+  zgen load bhilburn/powerlevel9k powerlevel9k
 
   # specify plugins here
   zgen load zsh-users/zsh-completions src
@@ -21,6 +21,7 @@ fi
 
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
+path=("/usr/local/opt/make/libexec/gnubin" $path)
 path=("$HOME/MBR/toolbox/bin" $path)
 export PATH
 
@@ -40,7 +41,7 @@ bindkey -v
 export DEFAULT_USER='roman'
 export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status docker_machine rbenv background_jobs time)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time status docker_machine rbenv background_jobs time)
 
 #autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
