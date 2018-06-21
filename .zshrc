@@ -65,5 +65,8 @@ alias .....="cd ../../../.."
 
 alias ll="ls -hal"
 alias sudo='sudo '
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
