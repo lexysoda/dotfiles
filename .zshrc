@@ -53,6 +53,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 export CLICOLOR=1
 export LSCOLORS=exfxfeaeBxxehehbadacea
 
+# tmux colors
+export TERM="xterm-256color"
+
 #aliases
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
