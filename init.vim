@@ -5,3 +5,5 @@ set softtabstop=2
 set number
 set relativenumber 
 highlight LineNr ctermfg=DarkGrey
+syntax on
+filetype plugin indent on
