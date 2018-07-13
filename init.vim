@@ -7,3 +7,6 @@ set relativenumber
 highlight LineNr ctermfg=DarkGrey
 syntax on
 filetype plugin indent on
+
+" Use OSX system clipboard
+set clipboard=unnamed
