@@ -25,6 +25,7 @@ path=("/usr/local/opt/make/libexec/gnubin" $path)
 path=("/usr/local/opt/findutils/libexec/gnubin" $path)
 path=("/usr/local/opt/gnu-sed/libexec/gnubin" $path)
 path=("$HOME/MBR/toolbox/bin" $path)
+path=("$HOME/MBR/bidder/bin" $path)
 export PATH
 
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
