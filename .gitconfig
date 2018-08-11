@@ -1,3 +1,5 @@
+[commit]
+  template = ~/.gitmessage
 [core]
 	editor=nvim
 	excludesfile = ~/.gitignore
