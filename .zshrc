@@ -2,6 +2,7 @@
 # update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 source ~/.zsh_plugins.sh
 
+# path
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
 path=("/usr/local/opt/make/libexec/gnubin" $path)
@@ -14,8 +15,10 @@ export PATH
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# mbr-toolbox
 source ~/MBR/toolbox/etc/git-shortcuts
 
+# hist
 HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
