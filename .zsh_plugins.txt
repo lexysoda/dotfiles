@@ -1,8 +1,8 @@
-# Plugins
-zsh-users/zsh-completions
-djui/alias-tips
-zsh-users/zsh-autosuggestions
-zsh-users/zsh-syntax-highlighting
-
 # Theme
 denysdovhan/spaceship-prompt
+
+# Plugins
+djui/alias-tips
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
