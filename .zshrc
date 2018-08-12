@@ -27,10 +27,8 @@ unsetopt autocd
 bindkey -v
 
 # prompt customization
-export DEFAULT_USER='roman'
-export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time status docker_machine rbenv background_jobs time)
+SPACESHIP_PROMPT_ORDER=(user dir host git hg package node ruby elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext exec_time line_sep vi_mode jobs char)
+SPACESHIP_DIR_TRUNC_REPO=false
 
 # autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
@@ -46,6 +44,10 @@ export TERM="xterm-256color"
 
 # aliases
 source ~/.aliases
+
+# node
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
