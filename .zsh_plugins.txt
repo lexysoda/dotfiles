@@ -1,0 +1,8 @@
+# Plugins
+zsh-users/zsh-completions
+djui/alias-tips
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+
+# Theme
+bhilburn/powerlevel9k

@@ -1,23 +1,6 @@
-# load zgen
-source "${HOME}/.zgen/zgen.zsh"
-
-# if the init scipt doesn't exist
-if ! zgen saved; then
-  echo "Creating a zgen save"
-
-  # themes
-  zgen load bhilburn/powerlevel9k powerlevel9k
-
-  # specify plugins here
-  zgen load zsh-users/zsh-completions src
-  zgen load iam4x/zsh-iterm-touchbar
-  zgen load djui/alias-tips
-  zgen load zsh-users/zsh-autosuggestions
-  zgen load zsh-users/zsh-syntax-highlighting
-
-  # generate the init script from plugins above
-  zgen save
-fi
+# load antibody
+# update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+source ~/.zsh_plugins.sh
 
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
