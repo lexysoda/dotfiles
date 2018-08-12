@@ -1,0 +1,16 @@
+# easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# colorls
+alias ls="colorls --sd"
+alias ll="colorls -al --sd --gs"
+
+# nvim
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
+alias sudo='sudo '
