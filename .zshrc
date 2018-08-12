@@ -32,7 +32,7 @@ export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time status docker_machine rbenv background_jobs time)
 
-#autosuggestion color (standard matches solarized background)
+# autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
 # autocompletion case-insensitive
@@ -44,17 +44,8 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # tmux colors
 export TERM="xterm-256color"
 
-#aliases
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+# aliases
+source ~/.aliases
 
-alias ll="ls -hal"
-alias sudo='sudo '
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-
+# jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
