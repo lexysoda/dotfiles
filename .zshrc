@@ -38,9 +38,8 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-#ls colors
-export CLICOLOR=1
-export LSCOLORS=exfxfeaeBxxehehbadacea
+# colorls autocompletion
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # tmux colors
 export TERM="xterm-256color"
