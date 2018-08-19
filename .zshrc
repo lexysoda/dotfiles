@@ -57,5 +57,9 @@ source ~/.aliases
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
