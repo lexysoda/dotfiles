@@ -37,6 +37,8 @@ SPACESHIP_PROMPT_ORDER=(user dir host git hg package node ruby elixir xcode swif
 SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_VI_MODE_INSERT="i"
 SPACESHIP_VI_MODE_NORMAL="n"
+SPACESHIP_VENV_SHOW=false
+SPACESHIP_CONDA_SHOW=false
 
 # autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
