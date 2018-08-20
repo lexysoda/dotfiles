@@ -27,6 +27,9 @@ SAVEHIST=1000000
 # don't assume cd command
 unsetopt autocd
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # vi-mode
 bindkey -v
 export KEYTIMEOUT=1
