@@ -7,6 +7,8 @@ alias .....="cd ../../../.."
 # colorls
 alias ls="colorls --sd"
 alias ll="colorls -al --sd --gs"
+alias lt="colorls --tree --gs"
+alias llt="colorls -al --tree --gs"
 
 # nvim
 alias v="nvim"
