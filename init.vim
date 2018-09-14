@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug '/usr/local/opt/fzf'
 
 call plug#end()
@@ -17,3 +18,6 @@ highlight LineNr ctermfg=DarkGrey
 
 " Use OSX system clipboard
 set clipboard=unnamed
+
+" Nerdtree shortcut
+map <C-n> :NERDTreeToggle<CR>
