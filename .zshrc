@@ -74,3 +74,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# iTerm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
