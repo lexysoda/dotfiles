@@ -27,9 +27,6 @@ SAVEHIST=1000000
 # don't assume cd command
 unsetopt autocd
 
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # vi-mode
 bindkey -v
 export KEYTIMEOUT=1
@@ -47,6 +44,13 @@ SPACESHIP_PYENV_SYMBOL="\ue73c "
 
 # autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+
+# Zsh autocompletion 
+autoload -U compinit && compinit
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_TMUX=1
 
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
