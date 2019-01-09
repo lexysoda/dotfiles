@@ -55,9 +55,6 @@ export FZF_TMUX=1
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# colorls autocompletion
-source $(dirname $(gem which colorls))/tab_complete.sh
-
 # tmux colors
 export TERM="xterm-256color"
 
@@ -74,6 +71,13 @@ eval "$(pyenv virtualenv-init -)"
 
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# rbenv
+eval "$(rbenv init -)"
+export RBENV_VERSION=2.6.0
+
+# colorls autocompletion
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
