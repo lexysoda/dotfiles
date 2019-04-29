@@ -16,9 +16,6 @@ export PATH
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-# mbr-toolbox
-source ~/MBR/toolbox/etc/git-shortcuts
-
 # hist
 HISTFILE=~/.histfile
 HISTSIZE=1000000
