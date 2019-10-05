@@ -21,6 +21,8 @@ export PATH
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # hist
+setopt inc_append_history
+setopt HIST_IGNORE_ALL_DUPS
 HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
