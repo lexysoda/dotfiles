@@ -4,6 +4,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug '/usr/local/opt/fzf'
+Plug 'jpalardy/vim-slime'
 
 call plug#end()
 
@@ -21,3 +22,6 @@ set clipboard=unnamed
 
 " Nerdtree shortcut
 map <C-n> :NERDTreeToggle<CR>
+
+" Let slime use tmux
+let g:slime_target = "tmux"
