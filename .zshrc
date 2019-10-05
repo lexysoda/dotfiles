@@ -2,6 +2,9 @@
 # update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 source ~/.zsh_plugins.sh
 
+# locale
+export LC_ALL=en_US.UTF-8
+
 # path
 path=("$HOME/.jenv/bin" $path)
 path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
