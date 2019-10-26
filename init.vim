@@ -7,6 +7,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -16,6 +17,7 @@ set shiftwidth=2
 set softtabstop=2
 set number
 set relativenumber 
+set conceallevel=2
 syntax enable
 highlight LineNr ctermfg=DarkGrey
 
