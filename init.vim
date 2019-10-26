@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
