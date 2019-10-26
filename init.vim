@@ -17,6 +17,8 @@ set relativenumber
 syntax enable
 highlight LineNr ctermfg=DarkGrey
 
+let mapleader= ' '
+
 " Use OSX system clipboard
 set clipboard=unnamed
 
