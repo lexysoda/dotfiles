@@ -79,8 +79,5 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 eval "$(rbenv init -)"
 export RBENV_VERSION=2.6.0
 
-# colorls autocompletion
-source $(dirname $(gem which colorls))/tab_complete.sh
-
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
