@@ -1,13 +1,15 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go'
-Plug 'plasticboy/vim-markdown'
+Plug 'pasticboy/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'rodjek/vim-puppet'
 
 call plug#end()
 
@@ -25,9 +27,6 @@ let mapleader= ' '
 
 " Use OSX system clipboard
 set clipboard=unnamed
-
-" Nerdtree shortcut
-map <C-n> :NERDTreeToggle<CR>
 
 " Let slime use tmux
 let g:slime_target = "tmux"
