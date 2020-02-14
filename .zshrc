@@ -12,9 +12,11 @@ path=("/usr/local/opt/make/libexec/gnubin" $path)
 path=("/usr/local/opt/findutils/libexec/gnubin" $path)
 path=("/usr/local/opt/gnu-sed/libexec/gnubin" $path)
 path=("/usr/local/opt/grep/libexec/gnubin" $path)
+path=("/usr/local/opt/gnu-getopt/bin" $path)
 path=("$HOME/MBR/toolbox/bin" $path)
 path=("$HOME/MBR/bidder/bin" $path)
 path=("$HOME/MBR/management/bin" $path)
+path=("$HOME/MBR/broker/bin" $path)
 export PATH
 
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
@@ -34,6 +36,12 @@ unsetopt autocd
 bindkey -v
 export KEYTIMEOUT=1
 spaceship_vi_mode_enable
+
+# vi stuff
+export VISUAL=nvim
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 
 # prompt customization
 SPACESHIP_PROMPT_ORDER=(user dir host git hg package node ruby elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext exec_time line_sep vi_mode jobs char)
@@ -78,6 +86,3 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # rbenv
 eval "$(rbenv init -)"
 export RBENV_VERSION=2.6.0
-
-# iTerm2 integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
