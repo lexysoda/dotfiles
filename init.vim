@@ -5,11 +5,12 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go'
-Plug 'pasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'rodjek/vim-puppet'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
