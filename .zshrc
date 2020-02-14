@@ -35,7 +35,6 @@ unsetopt autocd
 # vi-mode
 bindkey -v
 export KEYTIMEOUT=1
-spaceship_vi_mode_enable
 
 # vi stuff
 export VISUAL=nvim
@@ -43,15 +42,8 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-# prompt customization
-SPACESHIP_PROMPT_ORDER=(user dir host git hg package node ruby elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext exec_time line_sep vi_mode jobs char)
-SPACESHIP_CHAR_SYMBOL="\u276f "
-SPACESHIP_DIR_TRUNC=2
-SPACESHIP_VI_MODE_INSERT="i"
-SPACESHIP_VI_MODE_NORMAL="n"
-SPACESHIP_VENV_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_PYENV_SYMBOL="\ue73c "
+# starship prompt
+eval "$(starship init zsh)"
 
 # autosuggestion color (standard matches solarized background)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
