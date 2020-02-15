@@ -11,6 +11,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'rodjek/vim-puppet'
 Plug 'cespare/vim-toml'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -43,3 +45,6 @@ nnoremap <silent> <Leader>ag :Ag<CR>
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 nnoremap <silent> <Leader><Leader> :Files<CR>
+
+" Airline
+let g:airline_theme = "bubblegum"
