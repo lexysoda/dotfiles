@@ -12,10 +12,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'rodjek/vim-puppet'
 Plug 'cespare/vim-toml'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
+colorscheme gruvbox
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -24,7 +25,6 @@ set number
 set relativenumber
 set conceallevel=2
 syntax enable
-highlight LineNr ctermfg=DarkGrey
 
 let mapleader= ' '
 
@@ -45,6 +45,3 @@ nnoremap <silent> <Leader>ag :Ag<CR>
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 nnoremap <silent> <Leader><Leader> :Files<CR>
-
-" Airline
-let g:airline_theme = "bubblegum"

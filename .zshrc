@@ -45,9 +45,6 @@ bindkey -M vicmd v edit-command-line
 # starship prompt
 eval "$(starship init zsh)"
 
-# autosuggestion color (standard matches solarized background)
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
-
 # Zsh autocompletion
 autoload -U compinit && compinit
 
