@@ -1,20 +1,20 @@
 add_newline = true
 
-prompt_order = [
-  "directory",
-  "git_branch",
-  "git_state",
-  "git_status",
-  "golang",
-  "haskell",
-  "java",
-  "nodejs",
-  "php",
-  "python",
-  "ruby",
-  "rust",
-  "cmd_duration",
-  "line_break",
-  "jobs",
-  "character",
- ]
+format = """\
+  $directory\
+  $git_branch\
+  $git_state\
+  $git_status\
+  $golang\
+  $haskell\
+  $java\
+  $nodejs\
+  $php\
+  $python\
+  $ruby\
+  $rust\
+  $cmd_duration\
+  $line_break\
+  $jobs\
+  $character\
+  """
