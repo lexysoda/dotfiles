@@ -29,7 +29,11 @@ syntax enable
 let mapleader= ' '
 
 " Use OSX system clipboard
-set clipboard=unnamed
+if has('mac')
+  set clipboard=unnamed
+else
+  set clipboard=unnamedplus
+endif
 
 " Let slime use tmux
 let g:slime_target = "tmux"
