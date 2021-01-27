@@ -24,6 +24,11 @@ export PATH
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# kanbanize token
+if [[ -r ~/dotfiles/kanbanize ]]; then
+  source ~/dotfiles/kanbanize
+fi
+
 # hist
 setopt inc_append_history
 setopt HIST_IGNORE_ALL_DUPS
