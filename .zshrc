@@ -2,6 +2,11 @@
 # update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 source ~/.zsh_plugins.sh
 
+# http://zsh.sourceforge.net/Doc/Release/Expansion.html#Parameter-Expansion-Flags
+# http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Shell-state
+# http://zsh.sourceforge.net/Doc/Release/Expansion.html#Modifiers
+cd ${${(%):-%x}:A:h}
+
 # locale
 export LC_ALL=en_US.UTF-8
 
@@ -25,9 +30,7 @@ export PATH
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # kanbanize token
-if [[ -r ~/dotfiles/kanbanize ]]; then
-  source ~/dotfiles/kanbanize
-fi
+[[ -r kanbanize ]] && source kanbanize
 
 # hist
 setopt inc_append_history
