@@ -11,15 +11,6 @@ cd ${${(%):-%x}:A:h}
 export LC_ALL=en_US.UTF-8
 
 # path
-path=("$HOME/.jenv/bin" $path)
-path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
-path=("/usr/local/opt/make/libexec/gnubin" $path)
-path=("/usr/local/opt/findutils/libexec/gnubin" $path)
-path=("/usr/local/opt/gnu-sed/libexec/gnubin" $path)
-path=("/usr/local/opt/grep/libexec/gnubin" $path)
-path=("/usr/local/opt/gnu-getopt/bin" $path)
-path=("/usr/local/opt/gnu-tar/libexec/gnubin" $path)
-path=("/usr/local/opt/curl/bin" $path)
 path=("$HOME/MBR/toolbox/bin" $path)
 path=("$HOME/MBR/bidder/bin" $path)
 path=("$HOME/MBR/management/bin" $path)
@@ -31,6 +22,9 @@ export PATH
 
 # kanbanize token
 [[ -r kanbanize ]] && source kanbanize
+
+# shitbook pro
+[[ "$(uname 2> /dev/null)" = "Darwin" && -r .zshrc_mac ]] && source .zshrc_mac
 
 # hist
 setopt inc_append_history
@@ -70,18 +64,3 @@ export TERM="xterm-256color"
 
 # aliases
 source ~/.aliases
-
-# node
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-# pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-
-# rbenv
-eval "$(rbenv init -)"
-export RBENV_VERSION=2.6.0

@@ -1,0 +1,25 @@
+path=("$HOME/.jenv/bin" $path)
+path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
+path=("/usr/local/opt/make/libexec/gnubin" $path)
+path=("/usr/local/opt/findutils/libexec/gnubin" $path)
+path=("/usr/local/opt/gnu-sed/libexec/gnubin" $path)
+path=("/usr/local/opt/grep/libexec/gnubin" $path)
+path=("/usr/local/opt/gnu-getopt/bin" $path)
+path=("/usr/local/opt/gnu-tar/libexec/gnubin" $path)
+path=("/usr/local/opt/curl/bin" $path)
+export PATH
+
+# node
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# rbenv
+eval "$(rbenv init -)"
+export RBENV_VERSION=2.6.0
