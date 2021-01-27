@@ -13,6 +13,7 @@ Plug 'rodjek/vim-puppet'
 Plug 'cespare/vim-toml'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-rhubarb'
 
 call plug#end()
 
