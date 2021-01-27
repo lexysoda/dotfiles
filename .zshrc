@@ -50,7 +50,12 @@ bindkey -M vicmd v edit-command-line
 eval "$(starship init zsh)"
 
 # Zsh autocompletion
-autoload -U compinit && compinit
+autoload -Uz compinit
+if [ $(date +'%j') != $(/usr/bin/stat -f '%Sm' -t '%j' ${ZDOTDIR:-$HOME}/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
