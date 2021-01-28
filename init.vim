@@ -14,6 +14,7 @@ Plug 'cespare/vim-toml'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-rhubarb'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 
