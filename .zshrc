@@ -39,7 +39,7 @@ unsetopt autocd
 
 # vi-mode
 bindkey -v
-export KEYTIMEOUT=1
+bindkey jk vi-cmd-mode
 
 # vi stuff
 export VISUAL=nvim
