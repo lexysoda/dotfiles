@@ -15,6 +15,7 @@ path=("$HOME/MBR/toolbox/bin" $path)
 path=("$HOME/MBR/bidder/bin" $path)
 path=("$HOME/MBR/management/bin" $path)
 path=("$HOME/MBR/broker/bin" $path)
+path=("$HOME/go/bin" $path)
 export PATH
 
 # manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
