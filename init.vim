@@ -31,6 +31,8 @@ syntax enable
 
 let mapleader= ' '
 
+inoremap jk <Esc>
+
 " Use OSX system clipboard
 if has('mac')
   set clipboard=unnamed
