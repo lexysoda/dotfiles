@@ -3,15 +3,14 @@
 source ~/.zsh_plugins.sh
 
 # path
-path=("$HOME/MBR/toolbox/bin" $path)
-path=("$HOME/MBR/bidder/bin" $path)
-path=("$HOME/MBR/management/bin" $path)
-path=("$HOME/MBR/broker/bin" $path)
+path=("$HOME/mbr/toolbox/bin" $path)
+path=("$HOME/mbr/bidder/bin" $path)
+path=("$HOME/mbr/management/bin" $path)
+path=("$HOME/mbr/broker/bin" $path)
+path=("$HOME/mbr/aws-cli-oidc/bin" $path)
+path=("$(ruby -e 'puts Gem.user_dir')/bin" $path)
 path=("$HOME/go/bin" $path)
 export PATH
-
-# manpath=("/usr/local/opt/coreutils/libexec/gnuman" $manpath)
-# export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # kanbanize token
 [[ -r ~/dotfiles/kanbanize ]] && source ~/dotfiles/kanbanize
