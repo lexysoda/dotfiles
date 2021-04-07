@@ -19,7 +19,7 @@ export PATH
 # export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # kanbanize token
-[[ -r kanbanize ]] && source kanbanize
+[[ -r ~/dotfiles/kanbanize ]] && source ~/dotfiles/kanbanize
 
 # shitbook pro
 [[ "$(uname 2> /dev/null)" = "Darwin" && -r .zshrc_mac ]] && source .zshrc_mac
