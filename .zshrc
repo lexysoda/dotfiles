@@ -39,12 +39,7 @@ bindkey -M vicmd v edit-command-line
 eval "$(starship init zsh)"
 
 # Zsh autocompletion
-autoload -Uz compinit
-if [ $(date +'%j') != $(/usr/bin/stat -f '%Sm' -t '%j' ${ZDOTDIR:-$HOME}/.zcompdump) ]; then
-  compinit
-else
-  compinit -C
-fi
+autoload -U compinit && compinit
 
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
