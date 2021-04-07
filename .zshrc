@@ -55,12 +55,12 @@ else
   compinit -C
 fi
 
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_TMUX=1
-
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # aliases
 source ~/.aliases
+
+# fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
