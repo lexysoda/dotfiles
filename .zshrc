@@ -2,11 +2,6 @@
 # update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 source ~/.zsh_plugins.sh
 
-# http://zsh.sourceforge.net/Doc/Release/Expansion.html#Parameter-Expansion-Flags
-# http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Shell-state
-# http://zsh.sourceforge.net/Doc/Release/Expansion.html#Modifiers
-cd ${${(%):-%x}:A:h}
-
 # path
 path=("$HOME/MBR/toolbox/bin" $path)
 path=("$HOME/MBR/bidder/bin" $path)
