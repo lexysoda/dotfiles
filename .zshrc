@@ -21,9 +21,6 @@ export PATH
 # kanbanize token
 [[ -r ~/dotfiles/kanbanize ]] && source ~/dotfiles/kanbanize
 
-# shitbook pro
-[[ "$(uname 2> /dev/null)" = "Darwin" && -r .zshrc_mac ]] && source .zshrc_mac
-
 # hist
 setopt inc_append_history
 setopt HIST_IGNORE_ALL_DUPS
