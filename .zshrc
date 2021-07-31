@@ -28,6 +28,7 @@ unsetopt autocd
 # vi-mode
 bindkey -v
 bindkey jk vi-cmd-mode
+bindkey -v '^?' backward-delete-char
 
 # vi stuff
 export VISUAL=nvim
