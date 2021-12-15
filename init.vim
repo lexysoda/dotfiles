@@ -16,6 +16,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-unimpaired'
 Plug 'rust-lang/rust.vim'
+Plug 'lexysoda/vim-notes'
 
 call plug#end()
 
@@ -28,6 +29,8 @@ set number
 set relativenumber
 set conceallevel=2
 syntax enable
+
+let g:vimnotes_dir = "$HOME/notes"
 
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_new_list_item_indent = 0
