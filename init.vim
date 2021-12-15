@@ -16,6 +16,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-rhubarb'
 Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-unimpaired'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
