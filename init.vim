@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go'
