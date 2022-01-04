@@ -39,6 +39,10 @@ let mapleader= ' '
 
 inoremap jk <Esc>
 
+" vim-notes
+nnoremap <silent> <Leader>vn :NotesFZF<CR>
+nnoremap <silent> <Leader>vd :NotesOpenDiary<CR>
+
 " Use OSX system clipboard
 if has('mac')
   set clipboard=unnamed
