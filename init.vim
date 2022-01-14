@@ -28,6 +28,7 @@ set softtabstop=2
 set number
 set relativenumber
 set conceallevel=2
+set scrolloff=5
 set foldmethod=syntax
 set foldlevelstart=2
 syntax enable
