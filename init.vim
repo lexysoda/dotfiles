@@ -28,6 +28,8 @@ set softtabstop=2
 set number
 set relativenumber
 set conceallevel=2
+set foldmethod=syntax
+set foldlevelstart=2
 syntax enable
 
 let g:vimnotes_dir = "$HOME/notes"
