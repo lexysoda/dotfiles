@@ -67,3 +67,19 @@ nnoremap <silent> <Leader>ag :Ag<CR>
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 nnoremap <silent> <Leader><Leader> :Files<CR>
+
+function! SwitchSourceHeader()
+  let extension = expand("%:e")
+  if extension ==? "cpp"
+    let extension = ".hpp"
+  elseif extension ==? "hpp"
+    let extension = ".cpp"
+  endif
+  let alternate = expand("%:r") . extension
+  echom alternate
+  if filereadable(alternate)
+    execute ":edit" alternate
+  endif
+endfunction
+
+nnoremap <leader>pp :call SwitchSourceHeader()<cr>
