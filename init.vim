@@ -17,6 +17,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-unimpaired'
 Plug 'rust-lang/rust.vim'
 Plug 'lexysoda/vim-notes'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
