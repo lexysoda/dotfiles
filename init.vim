@@ -84,3 +84,4 @@ function! SwitchSourceHeader()
 endfunction
 
 nnoremap <leader>pp :call SwitchSourceHeader()<cr>
+command! FormatCpp !/opt/clang-format-static/clang-format-10 -style=file -i %
