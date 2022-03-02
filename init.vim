@@ -46,6 +46,7 @@ inoremap jk <Esc>
 " vim-notes
 nnoremap <silent> <Leader>vn :NotesFZF<CR>
 nnoremap <silent> <Leader>vd :NotesOpenDiary<CR>
+nnoremap <Leader>vt :NotesOpenTopic 
 
 " Use OSX system clipboard
 if has('mac')
