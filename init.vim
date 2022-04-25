@@ -33,7 +33,6 @@ set relativenumber
 set conceallevel=2
 set scrolloff=5
 set foldmethod=syntax
-set foldlevelstart=2
 syntax enable
 
 let g:vimnotes_dir = "$HOME/notes"
