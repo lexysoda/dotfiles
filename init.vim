@@ -18,6 +18,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'rust-lang/rust.vim'
 Plug 'lexysoda/vim-notes'
 Plug 'tpope/vim-surround'
+Plug 'pearofducks/ansible-vim'
 
 call plug#end()
 
