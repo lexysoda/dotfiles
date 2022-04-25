@@ -19,6 +19,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'lexysoda/vim-notes'
 Plug 'tpope/vim-surround'
 Plug 'pearofducks/ansible-vim'
+Plug 'uarun/vim-protobuf'
 
 call plug#end()
 
