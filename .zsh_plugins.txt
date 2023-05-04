@@ -1,7 +1,3 @@
-# Theme
-denysdovhan/spaceship-prompt
-
-# Plugins
 djui/alias-tips
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
