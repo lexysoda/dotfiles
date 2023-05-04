@@ -1,6 +1,6 @@
-# load antibody
-# update plugins with antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
-source ~/.zsh_plugins.sh
+# antidote
+source '/usr/share/zsh-antidote/antidote.zsh'
+antidote load
 
 # path
 path=("$HOME/mbr/toolbox/bin" $path)
