@@ -5,8 +5,11 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # lsd
-alias ls="lsd"
+alias ls="/bin/lsd"
 alias ll="ls -hal"
+
+#ssp
+alias lsd="~/development/adscale/bin/lsd"
 
 # nvim
 alias v="nvim"

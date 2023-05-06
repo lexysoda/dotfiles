@@ -3,17 +3,10 @@ source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
 
 # path
-path=("$HOME/mbr/toolbox/bin" $path)
-path=("$HOME/mbr/bidder/bin" $path)
-path=("$HOME/mbr/management/bin" $path)
-path=("$HOME/mbr/broker/bin" $path)
-path=("$HOME/mbr/aws-cli-oidc/bin" $path)
 path=("$(ruby -e 'puts Gem.user_dir')/bin" $path)
 path=("$HOME/go/bin" $path)
+path=("$HOME/.cargo/bin" $path)
 export PATH
-
-# kanbanize token
-[[ -r ~/dotfiles/kanbanize ]] && source ~/dotfiles/kanbanize
 
 # hist
 setopt inc_append_history
@@ -51,3 +44,10 @@ source ~/.aliases
 # fzf
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+# work
+source ~/dotfiles/work.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
