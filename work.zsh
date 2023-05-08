@@ -27,7 +27,10 @@ mbr () {
 ssp () {
   vpn
 
-  sudo mount --bind ~/mbr ~/development
+  if ! findmnt ~/development > /dev/null
+  then
+    sudo mount --bind ~/mbr ~/development
+  fi
 
   export DEFAULT_PROFILE="${HOME}/development/default-profile"
   export ADSCALE_DEV_ROOT="${HOME}/development/adscale"
