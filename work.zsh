@@ -53,6 +53,7 @@ ssp () {
   path=("$HOME/mbr/management/bin" $path)
   path=("$HOME/mbr/broker/bin" $path)
   path=("${ADSCALE_DEV_ROOT}/bin" $path)
+  path=("${DEFAULT_PROFILE}/bin" $path)
   export PATH
 }
 
