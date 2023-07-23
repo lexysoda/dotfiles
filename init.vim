@@ -5,7 +5,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go'
 Plug 'plasticboy/vim-markdown'
-Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'rodjek/vim-puppet'
@@ -20,8 +19,12 @@ Plug 'lexysoda/vim-notes'
 Plug 'tpope/vim-surround'
 Plug 'pearofducks/ansible-vim'
 Plug 'uarun/vim-protobuf'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
+
+source ~/dotfiles/lsp.lua
 
 colorscheme gruvbox
 set expandtab
@@ -30,10 +33,13 @@ set shiftwidth=2
 set softtabstop=2
 set number
 set relativenumber
-set conceallevel=2
 set scrolloff=5
 set foldmethod=syntax
 syntax enable
+
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable                     " Disable folding at startup.
 
 let g:vimnotes_dir = "$HOME/notes"
 
