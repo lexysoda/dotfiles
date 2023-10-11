@@ -36,3 +36,6 @@ vim.api.nvim_create_user_command(
   'FormatCpp',
   '!/opt/clang-format-static/clang-format-10 -style=file -i %', {}
 )
+
+-- vimnotes
+vim.g.vimnotes_dir = '$HOME/notes'
