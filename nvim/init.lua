@@ -27,7 +27,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>')
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
 
 -- netrw
-vim.g.netrw_keepj = ''
 vim.g.netrw_banner = 0
 vim.g.netrw_netrw_fastbrowse = 2
 
