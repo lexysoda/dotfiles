@@ -19,10 +19,7 @@ return require('packer').startup(function(use)
 
   use 'neovim/nvim-lspconfig'
 
-  use {
-    'j-hui/fidget.nvim',
-    tag = 'legacy',
-  }
+  use 'j-hui/fidget.nvim'
 
   use {
     'nvim-treesitter/nvim-treesitter',
