@@ -2,6 +2,9 @@
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
 
+# gcr keyring https://wiki.archlinux.org/title/GNOME/Keyring#SSH_keys
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+
 # path
 path=("$(ruby -e 'puts Gem.user_dir')/bin" $path)
 path=("$HOME/go/bin" $path)
