@@ -45,4 +45,7 @@ return require('packer').startup(function(use)
 
   use 'udalov/kotlin-vim'
 
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+
 end)
