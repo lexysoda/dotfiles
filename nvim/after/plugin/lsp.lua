@@ -1,6 +1,13 @@
 local lspconfig = require('lspconfig')
+local cmp = require('cmp')
+
+cmp.setup {}
+local caps = require('cmp_nvim_lsp').default_capabilities()
+
 lspconfig.tsserver.setup {}
-lspconfig.rust_analyzer.setup {}
+lspconfig.rust_analyzer.setup({
+  capabilities = caps,
+})
 lspconfig.gopls.setup{}
 
 lspconfig.lua_ls.setup {
