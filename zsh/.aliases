@@ -17,3 +17,6 @@ alias vi="nvim"
 alias vim="nvim"
 
 alias sudo='sudo '
+
+alias cat='bat '
+alias man='batman '
