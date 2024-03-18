@@ -44,6 +44,9 @@ autoload -U compinit && compinit
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# glob hidden files
+setopt globdots
+
 # aliases
 source ~/.aliases
 
