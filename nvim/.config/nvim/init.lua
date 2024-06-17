@@ -1,7 +1,7 @@
-require('plugins')
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+require('plugins')
 
 vim.o.clipboard = 'unnamedplus'
 vim.o.completeopt = 'menuone,noselect'
@@ -18,17 +18,14 @@ vim.cmd.colorscheme('gruvbox')
 
 vim.o.foldmethod = 'expr'
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
-vim.o.foldenable = false
+vim.o.foldenable = true
+vim.o.foldlevel = 20
 
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>')
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>')
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>')
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
-
--- netrw
-vim.g.netrw_banner = 0
-vim.g.netrw_netrw_fastbrowse = 2
 
 -- cpp
 vim.api.nvim_create_user_command(
