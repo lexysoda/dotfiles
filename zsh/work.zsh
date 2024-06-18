@@ -26,35 +26,9 @@ mbr () {
 ssp () {
   vpn
 
-  if ! findmnt ~/development > /dev/null
-  then
-    sudo mount --bind ~/mbr ~/development
-  fi
+  source ~/development/default-profile/zsh_profile
 
-  export DEFAULT_PROFILE="${HOME}/development/default-profile"
-  export ADSCALE_DEV_ROOT="${HOME}/development/adscale"
-  export TOOLS_ROOT="${HOME}/development/tools"
-  eval "$(${TOOLS_ROOT}/core/bin/core init -)"
-  eval "$(source ${TOOLS_ROOT}/scripts/utils/java.sh && envs)"
-  export MAVEN_OPTS='-Xmx3g -XX:+TieredCompilation -XX:TieredStopAtLevel=1'
-
-  export PYENV_ROOT="${PYENV_ROOT:-${HOME}/.pyenv}"
-  [[ "${PATH}" =~ "${PYENV_ROOT}/bin" ]] || export PATH="${PYENV_ROOT}/bin:${PATH}"
-  if command -v pyenv >/dev/null; then
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-  fi
-
-  source "${DEFAULT_PROFILE}/aws.sh"
-  source "${DEFAULT_PROFILE}/k8s.sh"
-
-  path=("$HOME/mbr/toolbox/bin" $path)
-  path=("$HOME/mbr/bidder/bin" $path)
-  path=("$HOME/mbr/management/bin" $path)
-  path=("$HOME/mbr/broker/bin" $path)
-  path=("${ADSCALE_DEV_ROOT}/bin" $path)
-  path=("${DEFAULT_PROFILE}/bin" $path)
-  path=("${TOOLS_ROOT}/bin" $path)
-  export PATH
+  # starship prompt
+  eval "$(starship init zsh)"
 }
 
