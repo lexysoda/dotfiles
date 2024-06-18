@@ -1,19 +1,19 @@
 [commit]
-  template = ~/.gitmessage
+    template = ~/.gitmessage
 
 [core]
-	editor = nvim
-	excludesfile = ~/.gitignore
+    editor = nvim
+    excludesfile = ~/.gitignore
 
 [user]
-	name = Roman Orzegowski
-	email = roman@mbr-targeting.com
+    name = Roman Orzegowski
+    email = roman@mbr-targeting.com
 
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+    insteadOf = https://github.com/
 
 [pull]
-	ff = only
+    ff = only
 
 [pager]
     diff = delta
