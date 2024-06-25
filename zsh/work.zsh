@@ -30,5 +30,7 @@ ssp () {
 
   # starship prompt
   eval "$(starship init zsh)"
+
+  source ~/.aliases
 }
 
