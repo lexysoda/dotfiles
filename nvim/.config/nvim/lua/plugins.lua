@@ -83,7 +83,7 @@ require("lazy").setup({
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   'lexysoda/vim-notes',
-  { 'lexysoda/nvim-toggle-term', dir = '~/development/nvim-toggle-term/' },
+  { 'lexysoda/nvim-toggle-term',   dir = '~/development/nvim-toggle-term/' },
 
   {
     'nvim-treesitter/nvim-treesitter',
@@ -327,5 +327,5 @@ require("lazy").setup({
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 
-  { 'renerocksai/telekasten.nvim', dependencies = { 'nvim-telescope/telescope.nvim' }},
+  { 'renerocksai/telekasten.nvim', dependencies = { 'nvim-telescope/telescope.nvim' } },
 })
