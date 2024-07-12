@@ -18,7 +18,6 @@ require("lazy").setup({
   'tpope/vim-sleuth',
   'tpope/vim-unimpaired',
   'tpope/vim-surround',
-  'tpope/vim-vinegar',
 
   -- gc to comment
   { 'numToStr/Comment.nvim',               opts = {} },
