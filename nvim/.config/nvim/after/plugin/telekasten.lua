@@ -18,3 +18,12 @@ vim.keymap.set('n', '<leader>zf', require('telekasten').find_notes)
 vim.keymap.set('n', '<leader>zd', require('telekasten').goto_today)
 vim.keymap.set('n', '<leader>zg', require('telekasten').search_notes)
 vim.keymap.set('n', '<leader>zn', require('telekasten').new_note)
+
+local group = vim.api.nvim_create_augroup("telekasten_autoconmmands", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "telekasten" },
+  callback = function(ev)
+    vim.keymap.set('n', '<Leader>t', require('telekasten').toggle_todo, { buffer = true })
+  end,
+  group = group,
+})
