@@ -11,10 +11,10 @@ c.window_decorations = "RESIZE"
 c.font = wez.font('FiraCode Nerd Font Mono')
 
 c.window_padding = {
-   left = '0.2cell',
-   right = '0.2cell',
+   left = '1cell',
+   right = '1cell',
    top = '0.5cell',
-   bottom = 0,
+   bottom = '0.5cell',
 }
 
 c.leader = { key = ' ', mods = 'CTRL', timeout_milliseconds = 1000 }
