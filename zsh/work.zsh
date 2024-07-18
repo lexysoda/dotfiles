@@ -1,5 +1,5 @@
 vpn () {
-  nmcli connection up romanaws.tcp
+  nmcli connection up romanaws
 }
 
 mbr () {
