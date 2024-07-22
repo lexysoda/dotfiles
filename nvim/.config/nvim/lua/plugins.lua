@@ -20,10 +20,12 @@ require("lazy").setup({
   'tpope/vim-surround',
 
   -- gc to comment
+  ---@diagnostic disable-next-line: missing-fields
   { 'numToStr/Comment.nvim',               opts = {} },
 
   'morhetz/gruvbox',
 
+  ---@diagnostic disable-next-line: missing-fields
   {
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
@@ -80,11 +82,14 @@ require("lazy").setup({
     end,
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   'lexysoda/vim-notes',
+  ---@diagnostic disable-next-line: missing-fields
   { 'lexysoda/nvim-toggle-term',   dir = '~/development/nvim-toggle-term/' },
 
+  ---@diagnostic disable-next-line: missing-fields
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -102,6 +107,7 @@ require("lazy").setup({
     end
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -191,6 +197,7 @@ require("lazy").setup({
     end,
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   { -- Autoformat
     'stevearc/conform.nvim',
     opts = {
@@ -217,6 +224,7 @@ require("lazy").setup({
     },
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
@@ -322,10 +330,12 @@ require("lazy").setup({
     end,
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 
+  ---@diagnostic disable-next-line: missing-fields
   { 'renerocksai/telekasten.nvim', dependencies = { 'nvim-telescope/telescope.nvim' } },
 })
