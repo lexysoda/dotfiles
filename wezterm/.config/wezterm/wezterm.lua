@@ -50,6 +50,7 @@ c.keys = {
       mods = 'LEADER|CTRL',
       action = act.ActivatePaneDirection('Down'),
    },
+   { key = ' ', mods = 'LEADER|CTRL', action = act.ActivateCopyMode },
 }
 
 return c
