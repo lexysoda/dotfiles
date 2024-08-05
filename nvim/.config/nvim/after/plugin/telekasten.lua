@@ -18,6 +18,7 @@ vim.keymap.set('n', '<leader>zf', require('telekasten').find_notes)
 vim.keymap.set('n', '<leader>zd', require('telekasten').goto_today)
 vim.keymap.set('n', '<leader>zg', require('telekasten').search_notes)
 vim.keymap.set('n', '<leader>zn', require('telekasten').new_note)
+vim.keymap.set('n', '<leader>zt', require('telekasten').show_tags)
 
 local group = vim.api.nvim_create_augroup("telekasten_autoconmmands", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
