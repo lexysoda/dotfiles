@@ -3,7 +3,6 @@ return {
   dependencies = {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
-    { 'j-hui/fidget.nvim', opts = {} },
     { 'folke/lazydev.nvim', ft = 'lua' },
   },
   config = function()
@@ -46,7 +45,6 @@ return {
     --     end
     --   end,
     -- })
-    require('fidget').setup({})
     require('mason').setup({})
 
     require('mason-lspconfig').setup({
