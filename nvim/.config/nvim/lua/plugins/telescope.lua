@@ -49,5 +49,8 @@ return {
     vim.keymap.set('n', '<leader><leader>',
       function() builtin.grep_string { search = '', word_match = '-w', path_display = { 'smart' } } end,
       { desc = 'Fuzzy search over all text in dir (similar to ag+fzf)' })
+
+    -- register shell as an alias for bash (this will allow fenced code blocks like ```shell)
+    vim.treesitter.language.register('bash', 'shell')
   end,
 }
