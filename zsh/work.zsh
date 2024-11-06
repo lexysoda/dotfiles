@@ -28,9 +28,11 @@ ssp () {
 
   source ~/development/default-profile/zsh_profile
 
-  # starship prompt
-  eval "$(starship init zsh)"
-
   source ~/.aliases
+
+  # starship prompt
+  PROMPT='$('/usr/bin/starship' prompt --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
+  RPROMPT='$('/usr/bin/starship' prompt --right --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
+  PROMPT2="$(/usr/bin/starship prompt --continuation)"
 }
 
