@@ -5,11 +5,7 @@ antidote load
 # gcr keyring https://wiki.archlinux.org/title/GNOME/Keyring#SSH_keys
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 
-# ruby
-export GEM_HOME="$(gem env user_gemhome)"
-
 # path
-path=("$GEM_HOME/bin" $path)
 path=("$HOME/go/bin" $path)
 path=("$HOME/.cargo/bin" $path)
 export PATH
