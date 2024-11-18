@@ -1,4 +1,4 @@
-inoremap jk <Esc>   
+inoremap jk <Esc>
 
 nnoremap <C-w><C-q> :action CloseEditor<CR>
 
