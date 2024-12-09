@@ -1,4 +1,8 @@
 inoremap jk <Esc>
+Plug 'preservim/nerdtree'
 
 nnoremap <C-w><C-q> :action CloseEditor<CR>
 
+
+nnoremap - :NERDTreeFind<CR>
+let g:NERDTreeMapQuit = '-'
