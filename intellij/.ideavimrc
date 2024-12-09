@@ -15,3 +15,7 @@ nnoremap <C-l> <C-w><C-l>
 " TRASHTree
 nnoremap - :NERDTreeFind<CR>
 let g:NERDTreeMapQuit = '-'
+
+" navigation
+map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(FindInPath)
