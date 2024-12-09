@@ -1,6 +1,9 @@
 Plug 'preservim/nerdtree'
 
+let mapleader = ' '
+
 inoremap jk <Esc>
+nnoremap <leader>u `[v`]U
 
 " windows
 nnoremap <C-w><C-q> :action CloseEditor<CR>
