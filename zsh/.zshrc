@@ -45,9 +45,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # glob hidden files
 setopt globdots
 
-# aliases
-source ~/.aliases
-
 # fzf
 source <(fzf --zsh)
 
@@ -55,3 +52,6 @@ source <(fzf --zsh)
 if [[ "$USER" == "twork" ]]; then
   source ~/development/default-profile/profile
 fi
+
+# aliases
+source ~/.aliases
