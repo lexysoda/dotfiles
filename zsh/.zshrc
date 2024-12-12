@@ -31,9 +31,6 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-# starship prompt
-eval "$(starship init zsh)"
-
 # Zsh and bash autocompletion
 autoload -Uz compinit bashcompinit
 compinit
@@ -52,6 +49,9 @@ source <(fzf --zsh)
 if [[ "$USER" == "twork" ]]; then
   source ~/development/default-profile/profile
 fi
+
+# starship prompt
+eval "$(starship init zsh)"
 
 # aliases
 source ~/.aliases
