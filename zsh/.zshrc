@@ -34,8 +34,10 @@ bindkey -M vicmd v edit-command-line
 # starship prompt
 eval "$(starship init zsh)"
 
-# Zsh autocompletion
-autoload -U compinit && compinit
+# Zsh and bash autocompletion
+autoload -Uz compinit bashcompinit
+compinit
+bashcompinit
 
 # autocompletion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -50,8 +52,6 @@ source ~/.aliases
 source <(fzf --zsh)
 
 # work
-source ~/work.zsh
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+if [[ "$USER" == "twork" ]]; then
+  source ~/development/default-profile/profile
+fi
