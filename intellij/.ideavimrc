@@ -3,6 +3,11 @@ Plug 'preservim/nerdtree'
 let mapleader = ' '
 
 inoremap jk <Esc>
+
+" clipboard
+set clipboard+=unnamedplus
+
+" uppercase
 nnoremap <leader>u `[v`]U
 
 " windows
@@ -17,5 +22,9 @@ nnoremap - :NERDTreeFind<CR>
 let g:NERDTreeMapQuit = '-'
 
 " navigation
-map <leader>sf <Action>(GotoFile)
-map <leader>sg <Action>(FindInPath)
+map <leader>sf <Action>(com.mituuz.fuzzier.FuzzierVCS)
+map <leader>sg <Action>(com.mituuz.fuzzier.FuzzyGrepCaseInsensitive)
+
+" formatting
+nmap <leader>ff <Action>(ShowReformatFileDialog)
+vmap <leader>ff <Action>(ReformatCode)
