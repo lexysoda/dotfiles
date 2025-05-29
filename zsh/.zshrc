@@ -8,6 +8,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 # path
 path=("$HOME/go/bin" $path)
 path=("$HOME/.cargo/bin" $path)
+path=("$HOME/.nix-profile/bin" $path)
 export PATH
 
 # hist
