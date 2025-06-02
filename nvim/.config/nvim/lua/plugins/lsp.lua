@@ -51,7 +51,7 @@ return {
       ensure_installed = {
         "gopls",
         "lua_ls",
-        "nil",
+        "nil_ls",
         "rust_analyzer",
       },
       automatic_enable = true,
