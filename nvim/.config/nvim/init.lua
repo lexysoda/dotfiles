@@ -44,6 +44,9 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
 vim.keymap.set('n', '//', ':noh<CR>', { silent = true })
 vim.keymap.set('n', '<leader>u', '`[v`]U')
 
+-- jk in terminal
+vim.keymap.set('t', '<C-j><C-k>', '<C-\\><C-n>')
+
 -- cpp
 vim.api.nvim_create_user_command(
   'FormatCpp',
