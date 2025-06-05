@@ -47,6 +47,10 @@ vim.keymap.set('n', '<leader>u', '`[v`]U')
 -- jk in terminal
 vim.keymap.set('t', '<C-j><C-k>', '<C-\\><C-n>')
 
+-- dont add commentlines on o/O
+-- :h fo-table
+vim.opt.formatoptions:remove "o"
+
 -- cpp
 vim.api.nvim_create_user_command(
   'FormatCpp',
