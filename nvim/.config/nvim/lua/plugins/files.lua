@@ -27,6 +27,10 @@ return {
             end
           end,
         },
+        ["<C-h>"] = false,
+        ["<C-l>"] = false,
+        ["<C-k>"] = false,
+        ["<C-j>"] = false,
       },
       view_options = {
         show_hidden = true,
