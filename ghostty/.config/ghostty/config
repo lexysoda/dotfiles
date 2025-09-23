@@ -1,0 +1,14 @@
+theme = Gruvbox Dark
+
+maximize = true
+
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+
+# gtk-titlebar-hide-when-maximized = true
+gtk-titlebar-style = tabs
+gtk-wide-tabs = false
+
+font-family = "FiraCode Nerd Font Mono"
+font-feature = calt
