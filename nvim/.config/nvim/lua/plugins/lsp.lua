@@ -53,6 +53,7 @@ return {
         "lua_ls",
         "nil_ls",
         "rust_analyzer",
+        "basedpyright",
       },
       automatic_enable = true,
     })
