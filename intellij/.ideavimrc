@@ -25,6 +25,8 @@ let g:NERDTreeMapQuit = '-'
 map <leader>sf <Action>(com.mituuz.fuzzier.FuzzierVCS)
 map <leader>sg <Action>(com.mituuz.fuzzier.FuzzyGrepCaseInsensitive)
 
+map <leader>gd <Action>(GotoImplementation)
+
 " formatting
 nmap <leader>ff <Action>(ShowReformatFileDialog)
 vmap <leader>ff <Action>(ReformatCode)
