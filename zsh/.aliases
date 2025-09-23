@@ -15,6 +15,7 @@ alias lsd="~/development/adscale/bin/lsd"
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
+alias vt='nvim -c "term"'
 
 alias sudo='sudo '
 
