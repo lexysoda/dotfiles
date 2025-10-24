@@ -17,6 +17,9 @@ alias vi="nvim"
 alias vim="nvim"
 alias vt='nvim -c "term"'
 
+# git
+alias gds="git diff --staged"
+
 alias sudo='sudo '
 
 alias cat='bat '
