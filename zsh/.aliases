@@ -19,6 +19,7 @@ alias vt='nvim -c "term"'
 
 # git
 alias gds="git diff --staged"
+alias grd="git range-diff @{u}...@"
 
 alias sudo='sudo '
 
