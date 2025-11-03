@@ -15,9 +15,6 @@ return {
   -- indentation indicators
   { "lukas-reineke/indent-blankline.nvim", main = "ibl",                                      opts = {} },
 
-  -- quick terminal
-  { 'lexysoda/nvim-toggle-term',           dir = '~/development/nvim-toggle-term/' },
-
   -- notes
   { 'renerocksai/telekasten.nvim',         dependencies = { 'nvim-telescope/telescope.nvim' } },
 
