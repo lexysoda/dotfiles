@@ -1,10 +1,3 @@
-@define-color selected-text #fabd2f;
-@define-color text #ebdbb2;
-@define-color base #282828;
-@define-color border #ebdbb2;
-@define-color foreground #ebdbb2;
-@define-color background #282828;
-
 * {
   all: unset;
 }
@@ -12,7 +5,7 @@
 * {
   font-family: monospace;
   font-size: 18px;
-  color: @text;
+  color: @theme_fg_color;
 }
 
 scrollbar {
@@ -28,9 +21,9 @@ scrollbar {
 }
 
 .box-wrapper {
-  background: alpha(@base, 0.95);
+  background: alpha(@theme_bg_color, 0.95);
   padding: 20px;
-  border: 2px solid @border;
+  border: 2px solid @borders;
 }
 
 .preview-box {
@@ -40,7 +33,7 @@ scrollbar {
 }
 
 .search-container {
-  background: @base;
+  background: @theme_bg_color;
   padding: 10px;
 }
 
@@ -80,7 +73,7 @@ child:selected .item-box {
 }
 
 child:selected .item-box * {
-  color: @selected-text;
+  color: @theme_selected_bg_color;
 }
 
 .item-box {
@@ -112,11 +105,11 @@ child:selected .item-box * {
 }
 
 .keybind-hints {
-  background: @background;
+  background: @theme_bg_color;
   padding: 10px;
   margin-top: 10px;
 }
 
 .preview {
-  background: @background;
+  background: @theme_bg_color;
 }
