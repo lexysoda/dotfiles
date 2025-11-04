@@ -9,7 +9,7 @@ alias ls="/bin/lsd"
 alias ll="ls -hal"
 
 #ssp
-alias lsd="~/development/adscale/bin/lsd"
+alias lsd="~/development/ssp-core/bin/lsd"
 
 # nvim
 alias v="nvim"
