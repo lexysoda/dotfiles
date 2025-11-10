@@ -27,6 +27,9 @@ map <leader>sg <Action>(com.mituuz.fuzzier.FuzzyGrepCaseInsensitive)
 
 map <leader>gd <Action>(GotoImplementation)
 
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+
 " formatting
 nmap <leader>ff <Action>(ShowReformatFileDialog)
 vmap <leader>ff <Action>(ReformatCode)
