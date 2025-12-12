@@ -6,6 +6,14 @@ return {
     { 'folke/lazydev.nvim', ft = 'lua' },
   },
   config = function()
+
+    vim.api.nvim_create_autocmd('BufWritePre', {
+      pattern = '*.go',
+      callback = function()
+        vim.lsp.buf.format()
+      end
+    })
+
     -- vim.api.nvim_create_autocmd('LspAttach', {
     --   group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
     --   callback = function(event)
