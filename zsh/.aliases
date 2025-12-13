@@ -18,8 +18,14 @@ alias vim="nvim"
 alias vt='nvim -c "term"'
 
 # git
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+alias gd="git diff"
 alias gds="git diff --staged"
+alias gp="git push"
 alias grd="git range-diff @{u}...@"
+alias gs="git status"
 
 alias sudo='sudo '
 
