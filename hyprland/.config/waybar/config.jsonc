@@ -8,16 +8,20 @@
     // Choose the order of the modules
     "modules-left": [
         "clock",
-        "tray"
+        "tray",
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "mpd",
+        "idle_inhibitor",
         "group/hardware",
         "backlight",
         "pulseaudio",
         "network",
+        "keyboard-state",
         "custom/power"
     ],
     "group/hardware": {
@@ -119,10 +123,10 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-wifi": "{essid} ({signalStrength}%) 󰖩",
+        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        "tooltip-format": "{ifname} via {gwaddr} 󰈀",
+        "format-linked": "{ifname} (No IP) 󰈀",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
@@ -158,15 +162,8 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : " ⏻ ",
 		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+		"on-click": "$HOME/.config/hypr/scripts/walker-power.sh"
     }
 }

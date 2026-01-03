@@ -1,1 +1,14 @@
 theme = "gruvbox"
+
+[list]
+placeholder = "No results"
+always_show = true
+
+[dmenu]
+separator = "\n"
+
+[search]
+placeholder = "Search..."
+
+[window]
+box.width = 400
