@@ -1,0 +1,79 @@
+* {
+  all: unset;
+}
+
+* {
+  font-family: "FiraCode Nerd Font", monospace;
+  font-size: 16px;
+  color: #d3c6aa; /* Foreground */
+}
+
+scrollbar {
+  opacity: 0;
+}
+
+.normal-icons {
+  -gtk-icon-size: 16px;
+}
+
+.large-icons {
+  -gtk-icon-size: 32px;
+}
+
+.box-wrapper {
+  background: #2b3339; /* Hard Dark BG */
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #5c6a72;
+}
+
+.search-container {
+  background: transparent;
+  padding: 10px;
+  border-bottom: 1px solid #4b565c;
+  margin-bottom: 10px;
+}
+
+.input:focus,
+.input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.item-box {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 2px;
+}
+
+child:hover .item-box {
+  background: #323d43; /* Hover BG */
+}
+
+child:selected .item-box {
+  background: #323d43; /* Selected BG */
+  color: #a7c080; /* Green Text for Selected */
+}
+
+child:selected .item-box * {
+  color: #a7c080;
+}
+
+.item-text-box {
+  all: unset;
+  padding: 0;
+}
+
+.item-image {
+  margin-right: 14px;
+}
+
+.current {
+  font-style: italic;
+}
+
+.keybind-hints {
+  padding: 10px;
+  margin-top: 10px;
+  color: #859289;
+}
