@@ -1,0 +1,13 @@
+/* Everforest Dark Medium CSS Variables */
+@define-color bg #2d353b;
+@define-color bg_dim #232a2e;
+@define-color fg #d3c6aa;
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color aqua #83c092;
+@define-color gray #859289;
+@define-color bg_hover #374145;
