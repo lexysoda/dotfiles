@@ -119,14 +119,3 @@ window#waybar.hidden {
 #keyboard-state label.locked {
     color: @yellow;
 }
-
-/* Internal Group Styling */
-#group-hardware #cpu,
-#group-hardware #memory,
-#group-hardware #temperature {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 8px;
-    margin: 0;
-}
