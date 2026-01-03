@@ -12,7 +12,7 @@ This setup uses **Hyprland** (a Wayland compositor) managed by **UWSM** (Univers
 *   **Notifications:** Mako
 *   **Launcher:** Walker
 *   **Wallpaper:** Hyprpaper
-*   **Night Light:** Wlsunset
+*   **Night Light:** hyprsunset + sunsetr (systemd)
 
 ## Theming System (Everforest Medium)
 
