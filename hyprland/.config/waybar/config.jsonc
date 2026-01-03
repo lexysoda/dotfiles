@@ -13,6 +13,7 @@
     ],
     "modules-right": [
         "idle_inhibitor",
+        "custom/sunsetr",
         "group/hardware",
         "backlight",
         "pulseaudio",
@@ -61,6 +62,19 @@
             "deactivated": ""
         }
     },
+    "custom/sunsetr": {
+        "exec": "sunsetr status --json --follow | jq --unbuffered --compact-output 'if .event_type == \"preset_changed\" then {text: \"\\(.target_temp)K\", alt: .target_period, tooltip: \"Preset: \\(.to_preset // \"default\")\\nTarget: \\(.target_temp)K @ \\(.target_gamma)%\"} elif .event_type == \"state_applied\" then {text: \"\\(.current_temp)K\", alt: .period, tooltip: \"Period: \\(.period)\\nTemp: \\(.current_temp)K @ \\(.current_gamma)%\"} else empty end'",
+         "return-type": "json",
+        "format": "{icon} {text}",
+        "format-icons": {
+          "day": "󰖨",
+          "night": "",
+          "sunset": "󰖛",
+          "sunrise": "󰖜",
+          "static": "󰋙"
+        },
+        "on-click": "sunsetr preset day"
+        },
     "tray": {
         // "icon-size": 21,
         "spacing": 10,
