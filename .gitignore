@@ -3,3 +3,6 @@ kanbanize
 
 # nvim lazy plugins
 nvim/.config/nvim/lazy-lock.json
+
+GEMINI.md
+.gemini/
