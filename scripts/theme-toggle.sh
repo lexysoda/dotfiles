@@ -54,7 +54,11 @@ fi
 # 5. Apply Ghostty Theme
 GHOSTTY_CONFIG="$HOME/.config/ghostty/config"
 if [ -f "$GHOSTTY_CONFIG" ]; then
-    sed -i "s/^theme = .*/theme = everforest-$MODE/" "$GHOSTTY_CONFIG"
+    if [ "$MODE" == "dark" ]; then
+        sed -i "s/^theme = .*/theme = Everforest Dark Hard/" "$GHOSTTY_CONFIG"
+    else
+        sed -i "s/^theme = .*/theme = Everforest Light Med/" "$GHOSTTY_CONFIG"
+    fi
     # Ghostty reloads automatically
 fi
 
