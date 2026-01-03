@@ -1,0 +1,20 @@
+#[Backend]
+backend = "hyprsunset"
+transition_mode = "geo"
+
+#[Smoothing]
+smoothing = true
+startup_duration = 0.5
+shutdown_duration = 0.5
+adaptive_interval = 1
+
+#[Time-based config]
+night_temp = 4000
+day_temp = 6500
+night_gamma = 100
+day_gamma = 100
+update_interval = 60
+
+#[Geolocation]
+latitude = 52.5
+longitude = 13.4
