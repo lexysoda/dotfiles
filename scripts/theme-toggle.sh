@@ -51,7 +51,14 @@ if [ -f "$WALLPAPER" ]; then
     hyprctl hyprpaper wallpaper ",$HYPR_CONFIG/wallpaper.png"
 fi
 
-# 5. Reload Apps
+# 5. Apply Ghostty Theme
+GHOSTTY_CONFIG="$HOME/.config/ghostty/config"
+if [ -f "$GHOSTTY_CONFIG" ]; then
+    sed -i "s/^theme = .*/theme = everforest-$MODE/" "$GHOSTTY_CONFIG"
+    # Ghostty reloads automatically
+fi
+
+# 6. Reload Apps
 pkill -SIGUSR2 waybar # Reload Waybar
 # Hyprland reloads config automatically when changed, but we force it to read colors
 hyprctl reload

@@ -1,6 +1,17 @@
 return {
-  -- gruvbox everywhere
-  'morhetz/gruvbox',
+  -- everforest theme
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+      })
+      vim.cmd.colorscheme("everforest")
+    end,
+  },
 
   -- tpope god
   'tpope/vim-fugitive',

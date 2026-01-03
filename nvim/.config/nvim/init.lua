@@ -29,7 +29,6 @@ vim.o.shiftwidth = 2
 vim.o.smartcase = true
 vim.o.tabstop = 2
 vim.o.termguicolors = true
-vim.cmd.colorscheme('gruvbox')
 
 vim.o.foldmethod = 'expr'
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
