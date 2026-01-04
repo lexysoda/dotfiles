@@ -6,10 +6,22 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
+      vim.o.background = "dark"
       require("everforest").setup({
         background = "hard",
+        on_highlights = function(hl, palette)
+          hl.TerminalDim = { fg = palette.fg, bg = palette.bg_dim }
+        end,
       })
       vim.cmd.colorscheme("everforest")
+
+      -- Set terminal buffers to use Everforest Dark Dim background
+      vim.api.nvim_create_autocmd("TermOpen", {
+        desc = "Use Dim background for terminal buffers",
+        callback = function()
+          vim.opt_local.winhighlight = "Normal:TerminalDim"
+        end,
+      })
     end,
   },
 
