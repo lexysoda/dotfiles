@@ -22,8 +22,8 @@ HYPR_CONFIG="$HOME/.config/hypr"
 GTK_CONFIG="$HOME/.config/gtk-3.0/settings.ini"
 
 # Files to copy from
-WAYBAR_THEME="$HOME/dotfiles/waybar/.config/waybar/everforest-$MODE.css"
-HYPR_THEME="$HOME/dotfiles/hypr/.config/hypr/everforest-$MODE.conf"
+WAYBAR_THEME="$HOME/dotfiles/hyprland/.config/waybar/everforest-$MODE.css"
+HYPR_THEME="$HOME/dotfiles/hyprland/.config/hypr/everforest-$MODE.conf"
 WALLPAPER="$HOME/dotfiles/wallpapers/$MODE.png" # You need to place wallpapers here!
 
 # 1. Apply Waybar Theme
