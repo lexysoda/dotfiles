@@ -11,7 +11,7 @@ This setup uses **Hyprland** (a Wayland compositor) managed by **UWSM** (Univers
 *   **Bar:** Waybar (Floating style, CSS-based theming)
 *   **Notifications:** Mako
 *   **Launcher:** Walker
-*   **Clipboard:** cliphist (Systemd service) + Walker (UI)
+*   **Clipboard:** elephant-clipboard
 *   **Wallpaper:** Hyprpaper
 *   **Night Light:** hyprsunset + sunsetr (systemd)
 
