@@ -6,7 +6,8 @@
     "modules-left": [
         "clock",
         "tray",
-        "custom/media"
+        "custom/media",
+        "custom/clipboard"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -61,6 +62,11 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "custom/clipboard": {
+        "format": "",
+        "tooltip": "Clipboard History",
+        "on-click": "cliphist list | walker --dmenu | cliphist decode | wl-copy"
     },
     "custom/sunsetr": {
         "exec": "sunsetr status --json --follow | jq --unbuffered --compact-output 'if .event_type == \"preset_changed\" then {text: \"\\(.target_temp)K\", alt: .target_period, tooltip: \"Preset: \\(.to_preset // \"default\")\\nTarget: \\(.target_temp)K @ \\(.target_gamma)%\"} elif .event_type == \"state_applied\" then {text: \"\\(.current_temp)K\", alt: .period, tooltip: \"Period: \\(.period)\\nTemp: \\(.current_temp)K @ \\(.current_gamma)%\"} else empty end'",
