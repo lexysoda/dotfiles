@@ -15,6 +15,9 @@ This setup uses **Hyprland** (a Wayland compositor) managed by **UWSM** (Univers
 *   **Wallpaper:** Hyprpaper
 *   **Night Light:** hyprsunset + sunsetr (systemd)
 
+### sunsetr
+Enabled as systemd unit: `systemctl --user enable --now sunsetr.service`
+
 ## Theming System (Everforest Medium)
 
 The system is designed to switch seamlessly between **Everforest Dark Medium** and **Everforest Light Medium**.
