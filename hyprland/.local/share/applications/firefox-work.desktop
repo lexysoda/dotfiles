@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Firefox (Work)
+Exec=/usr/lib/firefox/firefox --profile ~/.mozilla/firefox/zgGJmFuk.Profile\ 1 %u
+Terminal=false
+Icon=firefox
+StartupWMClass=firefox
+StartupNotify=true
+Categories=Network;WebBrowser;

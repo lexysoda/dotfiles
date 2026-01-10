@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Firefox (Personal)
+Exec=/usr/lib/firefox/firefox --profile ~/.mozilla/firefox/1pxd2v73.default-release %u
+Terminal=false
+Icon=firefox
+StartupWMClass=firefox
+StartupNotify=true
+Categories=Network;WebBrowser;
