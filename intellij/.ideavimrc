@@ -22,8 +22,8 @@ nnoremap - :NERDTreeFind<CR>
 let g:NERDTreeMapQuit = '-'
 
 " navigation
-map <leader>sf <Action>(com.mituuz.fuzzier.FuzzierVCS)
-map <leader>sg <Action>(com.mituuz.fuzzier.FuzzyGrepCaseInsensitive)
+map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(SearchEverywhere)
 
 map <leader>gd <Action>(GotoImplementation)
 
