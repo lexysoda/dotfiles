@@ -25,11 +25,6 @@ return {
     end,
   },
 
-  -- tpope god
-  'tpope/vim-sleuth',
-  'tpope/vim-unimpaired',
-  'tpope/vim-surround',
-
   -- gc to comment
   { 'numToStr/Comment.nvim',               opts = {} },
 
