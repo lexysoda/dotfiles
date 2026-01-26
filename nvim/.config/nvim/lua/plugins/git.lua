@@ -10,4 +10,7 @@ return {
       require("neogit").setup {}
       vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Neogit" })
     end
-  }}
+  },
+  'tpope/vim-fugitive',
+  'tpope/vim-rhubarb',
+}
