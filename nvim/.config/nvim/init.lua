@@ -30,8 +30,6 @@ vim.o.smartcase = true
 vim.o.tabstop = 2
 vim.o.termguicolors = true
 
-vim.o.foldmethod = 'expr'
-vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.o.foldenable = true
 vim.o.foldlevel = 20
 
