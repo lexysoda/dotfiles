@@ -1,3 +1,5 @@
+vim.pack.add({ 'https://github.com/renerocksai/telekasten.nvim' })
+
 require('telekasten').setup({
   home = vim.fn.expand("~/notes"),
   dailies = vim.fn.expand("~/notes/diary"),
@@ -24,7 +26,7 @@ local group = vim.api.nvim_create_augroup("telekasten_autoconmmands", { clear = 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "telekasten" },
   callback = function(ev)
-    vim.keymap.set('n', '<Leader>t', require('telekasten').toggle_todo, { buffer = true })
+    vim.keymap.set('n', '<Leader>t', require('telekasten').toggle_todo, { buffer = ev.buf })
   end,
   group = group,
 })
