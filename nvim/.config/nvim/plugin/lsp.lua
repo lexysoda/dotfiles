@@ -14,6 +14,7 @@ require("mason-lspconfig").setup {
     "rust_analyzer",
     "basedpyright",
   },
+  automatic_enable = true,
 }
 
 vim.api.nvim_create_autocmd('BufWritePre', {
