@@ -1,7 +1,20 @@
 vim.pack.add({ 'https://github.com/folke/lazydev.nvim' })
 require("lazydev").setup()
 
+vim.pack.add({ 'https://github.com/mason-org/mason.nvim' })
+require("mason").setup()
+
 vim.pack.add({ 'https://github.com/neovim/nvim-lspconfig' })
+
+vim.pack.add({ 'https://github.com/mason-org/mason-lspconfig.nvim' })
+require("mason-lspconfig").setup {
+  ensure_installed = {
+    "gopls",
+    "lua_ls",
+    "rust_analyzer",
+    "basedpyright",
+  },
+}
 
 vim.api.nvim_create_autocmd('BufWritePre', {
   pattern = '*.go',
@@ -9,8 +22,3 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     vim.lsp.buf.format({ bufnr = args.buf })
   end,
 })
-
-vim.lsp.enable('gopls')
-vim.lsp.enable('lua_ls')
-vim.lsp.enable('rust_analyzer')
-vim.lsp.enable('basedpyright')
