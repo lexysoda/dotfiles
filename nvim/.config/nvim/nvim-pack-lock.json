@@ -1,8 +1,8 @@
 {
   "plugins": {
     "diffview.nvim": {
-      "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
-      "src": "https://github.com/sindrets/diffview.nvim"
+      "rev": "2086ca265a189665a84d0806fd5f7f0acf23b1ac",
+      "src": "https://github.com/dlyongemallo/diffview.nvim"
     },
     "everforest-nvim": {
       "rev": "d235ca0aa6a29546e661a020e2618612acbbffbe",
