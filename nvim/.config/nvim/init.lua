@@ -39,3 +39,9 @@ vim.api.nvim_create_user_command(
 
 -- vimnotes
 vim.g.vimnotes_dir = '$HOME/notes'
+
+-- open help/man in vsplit
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "help", "man" },
+  command = "wincmd L",
+})
