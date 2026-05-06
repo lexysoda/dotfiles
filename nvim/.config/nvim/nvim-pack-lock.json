@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "codediff.nvim": {
+      "rev": "8afc229d38dc13ce71b2ffbb860084b2c726e061",
+      "src": "https://github.com/esmuellert/codediff.nvim"
+    },
     "diffview.nvim": {
       "rev": "2086ca265a189665a84d0806fd5f7f0acf23b1ac",
       "src": "https://github.com/dlyongemallo/diffview.nvim"
