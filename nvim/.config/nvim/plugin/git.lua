@@ -1,6 +1,5 @@
 vim.pack.add({
   'https://github.com/NeogitOrg/neogit',
-  'https://github.com/dlyongemallo/diffview.nvim',
   'https://github.com/esmuellert/codediff.nvim',
 })
 

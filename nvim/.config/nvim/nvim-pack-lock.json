@@ -4,10 +4,6 @@
       "rev": "8afc229d38dc13ce71b2ffbb860084b2c726e061",
       "src": "https://github.com/esmuellert/codediff.nvim"
     },
-    "diffview.nvim": {
-      "rev": "2086ca265a189665a84d0806fd5f7f0acf23b1ac",
-      "src": "https://github.com/dlyongemallo/diffview.nvim"
-    },
     "everforest-nvim": {
       "rev": "d235ca0aa6a29546e661a020e2618612acbbffbe",
       "src": "https://github.com/neanias/everforest-nvim"
