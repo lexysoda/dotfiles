@@ -13,6 +13,7 @@ require("mason-lspconfig").setup {
     "lua_ls",
     "rust_analyzer",
     "basedpyright",
+    "kotlin_lsp",
   },
   automatic_enable = true,
 }
