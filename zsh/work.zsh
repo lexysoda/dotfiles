@@ -36,3 +36,5 @@ ssp () {
   PROMPT2="$(/usr/bin/starship prompt --continuation)"
 }
 
+# https://stroeerdigitalgroup.slack.com/archives/C03MY7C985P/p1781737459546819?thread_ts=1781736446.564479&cid=C03MY7C985P
+alias fluxrestart='kubectl --field-manager=flux-client-side-apply rollout restart'
