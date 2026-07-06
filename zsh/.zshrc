@@ -50,7 +50,7 @@ source <(fzf --zsh)
 if [[ "$USER" == "twork" ]]; then
   source ~/development/tools/profile/profile
   compdef _lsd /bin/lsd
-  export MAVEN_OPTS='-Xmx3g -XX:+TieredCompilation -XX:ReservedCodeCacheSize=1g -XX:+UseCodeCacheFlushing'
+  export MAVEN_OPTS='-Xmx3g -XX:+TieredCompilation -XX:ReservedCodeCacheSize=1g -XX:+UseCodeCacheFlushing -XX:ActiveProcessorCount=4'
 fi
 
 # starship prompt
