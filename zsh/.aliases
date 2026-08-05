@@ -26,7 +26,7 @@ alias gds="git diff --staged"
 alias gp="git pull"
 alias grd="git range-diff @{u}...@"
 alias gs="git status"
-alias gri='git rebase -i $(git merge-base @ master)'
+alias gri='git rebase -i $(git merge-base @ origin/master)'
 
 alias sudo='sudo '
 
