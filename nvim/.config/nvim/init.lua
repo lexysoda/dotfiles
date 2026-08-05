@@ -49,11 +49,21 @@ vim.api.nvim_create_autocmd("FileType", {
 -- persist folds / cursor position
 local fold_group = vim.api.nvim_create_augroup("persistent_folds", { clear = true })
 
+local excluded_buftypes = {
+  nofile = true,
+}
+
+local excluded_filetypes = {
+  gitcommit = true,
+}
+
 vim.api.nvim_create_autocmd("BufWinLeave", {
   group = fold_group,
-  pattern = "?*",  -- only real files, not unnamed buffers
+  pattern = "?*",
   callback = function()
-    if vim.bo.filetype ~= "" and not vim.bo.buftype:match("nofile") then
+    local ft = vim.bo.filetype
+    local bt = vim.bo.buftype
+    if ft ~= "" and not excluded_buftypes[bt] and not excluded_filetypes[ft] then
       vim.cmd("silent! mkview")
     end
   end,
@@ -63,7 +73,9 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   group = fold_group,
   pattern = "?*",
   callback = function()
-    if vim.bo.filetype ~= "" and not vim.bo.buftype:match("nofile") then
+    local ft = vim.bo.filetype
+    local bt = vim.bo.buftype
+    if ft ~= "" and not excluded_buftypes[bt] and not excluded_filetypes[ft] then
       vim.cmd("silent! loadview")
     end
   end,
