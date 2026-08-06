@@ -1,5 +1,9 @@
 vim.pack.add({ 'https://github.com/folke/lazydev.nvim' })
-require("lazydev").setup()
+require("lazydev").setup({
+  library = {
+    { path = "/usr/share/hypr/stubs", words = { "hl%." } },
+  },
+})
 
 vim.pack.add({ 'https://github.com/mason-org/mason.nvim' })
 require("mason").setup()
