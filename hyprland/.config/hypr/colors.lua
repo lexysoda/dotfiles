@@ -1,0 +1,17 @@
+-- Everforest Dark Hard Hyprland Variables
+return {
+    bg = 0xff2b3339,
+    bg_dim = 0xff1e2326,
+    fg = 0xffd3c6aa,
+    red = 0xffe67e80,
+    orange = 0xffe69875,
+    yellow = 0xffdbbc7f,
+    green = 0xffa7c080,
+    blue = 0xff7fbbb3,
+    purple = 0xffd699b6,
+    aqua = 0xff83c092,
+    gray = 0xff859289,
+
+    active_border = 0xffa7c080,
+    inactive_border = 0xff1e2326,
+}

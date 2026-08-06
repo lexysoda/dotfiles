@@ -7,7 +7,7 @@ MODE=$1
 
 if [ -z "$MODE" ]; then
     # Toggle mode based on current link
-    if grep -q "everforest-dark" "$HOME/.config/hypr/colors.conf"; then
+    if grep -q "everforest-dark" "$HOME/.config/hypr/colors.lua"; then
         MODE="light"
     else
         MODE="dark"
@@ -23,14 +23,14 @@ GTK_CONFIG="$HOME/.config/gtk-3.0/settings.ini"
 
 # Files to copy from
 WAYBAR_THEME="$HOME/dotfiles/hyprland/.config/waybar/everforest-$MODE.css"
-HYPR_THEME="$HOME/dotfiles/hyprland/.config/hypr/everforest-$MODE.conf"
+HYPR_THEME="$HOME/dotfiles/hyprland/.config/hypr/everforest-$MODE.lua"
 WALLPAPER="$HOME/dotfiles/wallpapers/$MODE.png" # You need to place wallpapers here!
 
 # 1. Apply Waybar Theme
 cp "$WAYBAR_THEME" "$WAYBAR_CONFIG/colors.css"
 
 # 2. Apply Hyprland Theme
-cp "$HYPR_THEME" "$HYPR_CONFIG/colors.conf"
+cp "$HYPR_THEME" "$HYPR_CONFIG/colors.lua"
 
 # 3. Apply GTK Theme (Optional - requires installed themes)
 if [ "$MODE" == "dark" ]; then
