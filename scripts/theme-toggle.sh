@@ -24,7 +24,7 @@ GTK_CONFIG="$HOME/.config/gtk-3.0/settings.ini"
 # Files to copy from
 WAYBAR_THEME="$HOME/dotfiles/hyprland/.config/waybar/everforest-$MODE.css"
 HYPR_THEME="$HOME/dotfiles/hyprland/.config/hypr/everforest-$MODE.lua"
-WALLPAPER="$HOME/dotfiles/wallpapers/$MODE.png" # You need to place wallpapers here!
+WALLPAPER="$HOME/dotfiles/wallpapers/$MODE.png"
 
 # 1. Apply Waybar Theme
 cp "$WAYBAR_THEME" "$WAYBAR_CONFIG/colors.css"
@@ -42,12 +42,8 @@ else
 fi
 
 # 4. Update Wallpaper
-# This assumes you have 'dark.png' and 'light.png' in a wallpapers folder
 if [ -f "$WALLPAPER" ]; then
     cp "$WALLPAPER" "$HYPR_CONFIG/wallpaper.png"
-    # Preload and unload to force refresh without restarting hyprpaper if running
-    hyprctl hyprpaper unload "all"
-    hyprctl hyprpaper preload "$HYPR_CONFIG/wallpaper.png"
     hyprctl hyprpaper wallpaper ",$HYPR_CONFIG/wallpaper.png"
 fi
 
