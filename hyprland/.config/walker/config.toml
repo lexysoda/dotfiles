@@ -1,14 +1,4 @@
 theme = "everforest"
 
-[list]
-placeholder = "No results"
-always_show = true
-
-[dmenu]
-separator = "\n"
-
-[search]
-placeholder = "Search..."
-
-[window]
-box.width = 400
+[placeholders]
+"default" = { input = "Search...", list = "No results" }
