@@ -51,6 +51,7 @@ Run the toggle script to switch modes:
 *   `SUPER + C`: Close Window
 *   `SUPER + F`: Fullscreen
 *   `SUPER + V`: Toggle Floating
+*   `SUPER + SHIFT + L`: Lock Screen (Hyprlock)
 
 ### Window Management
 *   `SUPER + Arrow Keys`: Move Focus (Left, Down, Up, Right)

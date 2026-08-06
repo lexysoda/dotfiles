@@ -198,7 +198,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app -- " .. fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("uwsm-app -- " .. menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo()) -- dwindle
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("uwsm-app -- hyprlock --grace 0"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("uwsm-app -- hyprlock --grace 0"))
 -- hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
