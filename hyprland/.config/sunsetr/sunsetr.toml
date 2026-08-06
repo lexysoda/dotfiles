@@ -1,5 +1,5 @@
 #[Backend]
-backend = "hyprsunset"
+backend = "auto"
 transition_mode = "geo"
 
 #[Smoothing]
@@ -13,7 +13,7 @@ night_temp = 4000
 day_temp = 6500
 night_gamma = 100
 day_gamma = 100
-update_interval = 60
+update_interval = "auto"
 
 #[Geolocation]
 latitude = 52.5
