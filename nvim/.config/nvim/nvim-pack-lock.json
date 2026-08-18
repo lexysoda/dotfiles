@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "claudecode.nvim": {
+      "rev": "2390c6e45c4789072c293ac69de051d169668b29",
+      "src": "https://github.com/coder/claudecode.nvim"
+    },
     "codediff.nvim": {
       "rev": "31510a9b34c032b6fe98fc158d4066702f68cff2",
       "src": "https://github.com/esmuellert/codediff.nvim"
