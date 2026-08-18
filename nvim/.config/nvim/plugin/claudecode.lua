@@ -24,15 +24,9 @@ local function claude(cmd)
   end
 end
 
-vim.keymap.set('n', '<leader>cc', claude('ClaudeCode'), { desc = 'Toggle [C]laude' })
-vim.keymap.set('n', '<leader>cf', claude('ClaudeCodeFocus'), { desc = '[F]ocus Claude' })
-vim.keymap.set('n', '<leader>cr', claude('ClaudeCode --resume'), { desc = '[R]esume Claude' })
-vim.keymap.set('n', '<leader>cC', claude('ClaudeCode --continue'), { desc = '[C]ontinue Claude' })
-vim.keymap.set('n', '<leader>cm', claude('ClaudeCodeSelectModel'), { desc = 'Select Claude [m]odel' })
-vim.keymap.set('n', '<leader>cb', claude('ClaudeCodeAdd %'), { desc = 'Add current [b]uffer' })
+vim.keymap.set('n', '<leader>cc', claude('ClaudeCodeFocus'), { desc = 'Open/focus [C]laude' })
+vim.keymap.set('n', '<leader>cs', claude('ClaudeCodeAdd %'), { desc = '[S]end current buffer' })
 vim.keymap.set('v', '<leader>cs', claude('ClaudeCodeSend'), { desc = '[S]end selection to Claude' })
-vim.keymap.set('n', '<leader>ca', claude('ClaudeCodeDiffAccept'), { desc = '[A]ccept diff' })
-vim.keymap.set('n', '<leader>cd', claude('ClaudeCodeDiffDeny'), { desc = '[D]eny diff' })
 
 local oil_group = vim.api.nvim_create_augroup('claudecode_oil', { clear = true })
 vim.api.nvim_create_autocmd('FileType', {
