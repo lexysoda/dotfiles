@@ -17,6 +17,7 @@
 
 ## 4. Environment & Command Execution Restrictions
 - You are strictly prohibited from executing non-idempotent terminal operations unless explicitly requested by name. Do not run any commands that alter machine, database, folder, or project state natively.
+- "Non-idempotent" here means: changes to git-tracked files, or anything like pushing, deploying, or restarting services. It does NOT include local build artifacts (e.g. `target/`, `node_modules/`, compiled classes, test output) — building, compiling, and running tests locally is always fine.
 - Git Isolation: Never perform state-changing Git modifications (`git commit`, `git push`, `git rebase`, `git stash`, etc.) autonomously. You may execute passive inspections (`git diff`, `git status`, `git log`) to build context.
 
 ## 5. Tim Pope Git Commit Conventions
