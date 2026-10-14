@@ -25,6 +25,8 @@ let g:NERDTreeMapQuit = '-'
 " navigation
 map <leader>sf <Action>(GotoFile)
 map <leader>sg <Action>(SearchEverywhere)
+"" vim motions everywhere?
+set VimEverywhere
 
 map <leader>gd <Action>(GotoImplementation)
 
