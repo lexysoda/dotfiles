@@ -36,3 +36,8 @@ map [d <Action>(GotoPreviousError)
 " formatting
 nmap <leader>ff <Action>(ShowReformatFileDialog)
 vmap <leader>ff <Action>(ReformatCode)
+
+" git
+command! GBlame action Annotate
+command! GBrowse action Github.Open.In.Browser
+"" command! GBrowse !gh browse "$(realpath --relative-to=. %:p)"
