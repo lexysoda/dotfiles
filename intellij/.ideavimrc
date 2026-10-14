@@ -3,6 +3,7 @@ Plug 'preservim/nerdtree'
 let mapleader = ' '
 
 inoremap jk <Esc>
+set scrolloff=10
 
 " clipboard
 set clipboard+=unnamedplus
